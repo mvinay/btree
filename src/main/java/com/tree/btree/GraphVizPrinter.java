@@ -54,6 +54,7 @@ public class GraphVizPrinter {
             return;
         }
 
+        // Traverse the tree in BFS order to create the GraphViz 'Node's
         Queue<BTree.Node> nodeQueue = new ArrayDeque<>();
         nodeQueue.add(temp);
 
