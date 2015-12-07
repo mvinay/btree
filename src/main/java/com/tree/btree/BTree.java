@@ -202,7 +202,6 @@ public class BTree implements ITree {
         } else {
             node.addDataToLeaf(data);
         }
-        dumpTree(data);
     }
 
 
@@ -294,7 +293,7 @@ public class BTree implements ITree {
         System.out.println("Data = " + data);
     }
 
-    public void dumpTree(Data data) {
-        GraphVizPrinter.printTree(root, data);
+    public void dumpTree() {
+        GraphVizPrinter.printTree(root, null);
     }
 }

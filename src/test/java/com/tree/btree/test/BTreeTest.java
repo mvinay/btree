@@ -13,7 +13,9 @@ import java.util.Random;
  */
 public class BTreeTest {
 
-
+    /*
+    * A Data which stores integer.
+     */
     class IntData implements Data<Integer> {
 
         private Integer id;
@@ -52,11 +54,18 @@ public class BTreeTest {
 
         ArrayList<Integer> insertList = new ArrayList<>();
 
+        // Find some random numbers.
         for (int i = 100; i >= 0; --i) {
             insertList.add(Math.abs(new Random().nextInt(10000)));
         }
 
+        // insert the random data.
         insertList.stream().forEach((curr) -> tree.add(new IntData(curr)));
+
+        // search for all the inserted data.
         insertList.stream().forEach((curr) -> Assert.assertNotNull(tree.get(curr)));
+
+        // prints the tree to dotfile.
+        tree.dumpTree();
     }
 }

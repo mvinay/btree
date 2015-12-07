@@ -42,7 +42,9 @@ public class GraphVizPrinter {
     public static void printTree(BTree.Node root, Data data) {
         Graph graph = new Graph();
         graph.id("Graph" + i++);
-        graph.attr("label", "Inserting value: " + data);
+        if (data != null) {
+            graph.attr("label", "Inserting value: " + data);
+        }
         graph.attr("labelloc","t");
         final BTree.Node temp = root;
 

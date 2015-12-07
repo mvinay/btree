@@ -13,5 +13,5 @@ public interface ITree {
 
     void dump(Object key);
 
-    void dumpTree(Data data);
+    void dumpTree();
 }
