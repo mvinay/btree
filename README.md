@@ -2,5 +2,5 @@
 
 Wiki Link: https://en.wikipedia.org/wiki/B-tree
 
-Please refer the class <code> com.tree.btree.test.BTreeTest</code> for the usage.
+Please refer the to class <code> com.tree.btree.test.BTreeTest</code> for the usage.
 
